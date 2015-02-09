@@ -1,0 +1,10 @@
+# Cisco-Dashboard
+# @author Satheesh Valluru
+
+node_modules
+bootstrap
+.DS_Store
+.tmp
+.sass-cache
+style.min.css
+scripts.min.js

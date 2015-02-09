@@ -1,0 +1,11 @@
+15BDF4 - Sky Blue
+7ACC5A - Green
+FE7328 - Dark Orange
+FFC539 - Sunset Orange
+343436 - Dark Bg
+3B3B3D - Light Bg
+414144 - Lighter Bg
+333335 - Darker Bg
+F28B9E - Pink
+F5F9FB - Light Grey
+

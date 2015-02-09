@@ -144,17 +144,26 @@ module.exports = function (grunt) {
         }
       }
     },
-
+      
     /**
-     * Opens the web server in the browser
-     * https://github.com/jsoverson/grunt-open
+     * LESS Compiler
+     * https://github.com/gruntjs/grunt-contrib-less
+     * Compile Less Files an Convert it to CSs
      */
-    open: {
-      server: {
-        path: 'http://localhost:<%= connect.options.port %>'
+      
+    less: {
+      development: {
+        options: {
+          compress: true,
+          yuicompress: true,
+          optimization: 2
+        },
+        files: {
+          "css/main.css": "less/main.less" // destination file and source file
+        }
       }
     },
-
+    
     /**
      * Runs tasks against changed watched files
      * https://github.com/gruntjs/grunt-contrib-watch

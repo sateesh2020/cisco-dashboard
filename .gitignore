@@ -1,10 +1,8 @@
-# Cisco-Dashboard
-# @author Satheesh Valluru
-
-node_modules
-bootstrap
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
 .DS_Store
-.tmp
-.sass-cache
-style.min.css
-scripts.min.js
+.idea
+app/jspm_packages

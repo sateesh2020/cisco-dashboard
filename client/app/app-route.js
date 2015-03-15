@@ -30,8 +30,8 @@ angular
         })
 
         // Scheduled Maintenance Request  =================================
-        .state('remote-users', {
-            url: '/remote-users',
+        .state('remoteUsers', {
+            url: '/remoteUsers',
             templateUrl: 'app/remote-users/remote-users.html'  
             
         })

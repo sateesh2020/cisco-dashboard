@@ -15,12 +15,20 @@
                 'content':'<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-cubes fa-stack-1x fa-inverse"></i></span>Dashboard'
             },
             {
-                'originalPath':'devices',
-                'content':'Devices'
+                'originalPath':'services',
+                'content':'<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-line-chart fa-stack-1x fa-inverse"></i></span>Services'
             },
             {
-                'originalPath':'services',
-                'content':'Services'
+                'originalPath':'devices',
+                'content':'<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-th-large fa-stack-1x fa-inverse"></i></span>Devices'
+            },
+            {
+                'originalPath':'remoteUsers',
+                'content':'<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-users fa-stack-1x fa-inverse"></i></span>Remote Users'
+            },
+            {
+                'originalPath':'ordering',
+                'content':'<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>Ordering'
             }
         
         ]

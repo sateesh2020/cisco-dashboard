@@ -14,37 +14,11 @@
     <link rel="stylesheet" href="content/css/app.css"/>
   </head>
 
-  <body ng-app="app" layout="column" ng-controller="DashBoardCtrl as ul">
+  <body ng-app="app" layout="column">
 
     <div flex layout="row">
         <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2"
                     md-component-id="left" data-ng-include="'app/layout/sideNav.html'">
-                <!--<ul style="list-style:none">
-                    <li class="classic-menu-dropdown">
-					<a data-toggle="dropdown" ui-sref="dashboard" 
-					data-hover="megamenu-dropdown" data-close-others="true">
-					Dashboard </i>
-					</a>
-				</li>
-				<li class="classic-menu-dropdown">
-					<a data-toggle="dropdown" ui-sref="devices" 
-					data-hover="megamenu-dropdown" data-close-others="true">
-					Devices</i>
-					</a>
-				</li>
-                <li class="classic-menu-dropdown">
-					<a data-toggle="dropdown" ui-sref="services" 
-					data-hover="megamenu-dropdown" data-close-others="true">
-					Services</i>
-					</a>
-				</li>
-				<li class="classic-menu-dropdown">
-					<a data-toggle="dropdown" ui-sref="ordering" 
-					data-hover="megamenu-dropdown" data-close-others="true">
-					Ordering</i>
-					</a>
-				</li>
-                </ul>-->
         </md-sidenav>
         <md-content flex id="content" role="View" ui-view>
         </md-content>
@@ -57,6 +31,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/jquery.easy-pie-chart/dist/angular.easypiechart.js"></script>
     
     <!-- Bootstrapping -->
     <script src="app/app-module.js"></script>
@@ -76,7 +51,6 @@
     <!-- Dashboard -->
     <script src="app/dashboard/dashboard-module.js"></script>
     <script src="app/dashboard/dashboard.js"></script>
-    <script src="app/dashboard/DashboardService.js"></script>
     
     <!-- Devices -->
     <script src="app/devices/devices-module.js"></script>

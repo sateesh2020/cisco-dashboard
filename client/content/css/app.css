@@ -22,7 +22,7 @@ md-list .md-button {
   font-weight: 500;
   text-align: left;
   width: 100%;
-  padding: 15px 5px 15px 30px;
+  padding: 5px 5px 5px 30px;
 }
 md-list .md-button i.fa {
   margin-right: 10px;
@@ -33,78 +33,116 @@ md-list .md-button .md-button.selected {
 md-sidenav md-list {
   padding: 0px 0px 8px 0px;
 }
-/* Primary content area */
-#content {
-  overflow: hidden;
+/* Dashboard content area */
+.dashboard-wrapper {
+  margin: 30px 60px;
+  background: #f5f9fb;
 }
-#content {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 5px;
-}
-#content .md-button.share {
-  background-color: transparent;
-  border: none;
-  width: 48px;
-  height: 48px;
-  margin: 8px auto 16px 0;
+.easypiechart-label {
   position: absolute;
-  top: 10px;
-  right: 25px;
+  margin-top: 65px;
+  margin-left: 60px;
+  font-size: 25px;
 }
-#content md-icon.avatar {
-  margin-top: 10px;
+md-grid-tile.healthy md-grid-tile-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #f5f9fb;
 }
-#content .md-button.share > md-icon {
-  fill: black;
-  width: 36px;
-  height: 36px;
+md-grid-tile.healthy md-grid-tile-header figcaption h3 {
+  color: #232f34;
 }
-md-button.menuBtn > md-icon {
-  fill: white;
-  width: 24px;
-  height: 24px;
+md-grid-tile.healthy md-grid-tile-header figcaption h4 {
+  color: #7acc5a;
 }
-#content .md-button.share:active > md-icon {
-  background-color: #dadada;
-  border-radius: 75%;
-  padding: 4px;
-  transition: all 100ms ease-out 30ms;
+md-grid-tile.warning md-grid-tile-header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #f5f9fb;
 }
-#content img {
-  display: block;
-  height: auto;
-  max-width: 500px;
+md-grid-tile.warning md-grid-tile-header figcaption h3 {
+  color: #232f34;
 }
-/* Utils */
-.content-wrapper {
-  position: relative;
+md-grid-tile.warning md-grid-tile-header figcaption h4 {
+  color: #ffc539;
 }
-/* Typography support coming in 0.8.0 */
-md-toolbar h1 {
-  font-size: 1.250em;
+md-grid-tile.danger md-grid-tile-header {
+  background: #FFFFFF;
+  border-bottom: 2px solid #f5f9fb;
+}
+md-grid-tile.danger md-grid-tile-header figcaption h3 {
+  color: #232f34;
+}
+md-grid-tile.danger md-grid-tile-header figcaption h4 {
+  color: #fe7328;
+}
+[flex].flex.healthy .header {
+  border-bottom: 2px solid #f5f9fb;
+}
+[flex].flex.healthy .header h3 {
+  color: #233f34;
+}
+[flex].flex.healthy .header h4 {
+  color: #7acc5a;
+}
+[flex].flex.warning .header {
+  border-bottom: 2px solid #f5f9fb;
+}
+[flex].flex.warning .header h3 {
+  color: #233f34;
+}
+[flex].flex.warning .header h4 {
+  color: #ffc539;
+}
+[flex].flex.danger .header {
+  border-bottom: 2px solid #f5f9fb;
+}
+[flex].flex.danger .header h3 {
+  color: #233f34;
+}
+[flex].flex.danger .header h4 {
+  color: #fe7328;
+}
+[flex].flex {
+  background: #FFFFFF;
+  margin: 10px 5px 10px 0px;
+}
+[flex].flex h3,
+[flex].flex h4 {
   font-weight: 400;
+  margin: 0 0 0 16px;
 }
-.avatar {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0px;
-  vertical-align: middle;
-  zoom: 0.70;
-  transform: translateZ(0);
-  -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
+/******
+* Colorography
+******/
+.text-white {
+  color: white;
 }
-md-bottom-sheet md-icon {
-  margin-right: 20px;
+.text-black {
+  color: #232f34;
 }
-span.name {
-  font-weight: bold;
-  font-size: 1.1em;
-  padding-left: 5px;
+.text-green {
+  color: #7acc5a;
+}
+.text-dark-orange {
+  color: #fe7328;
+}
+.text-sunset-orange {
+  color: #ffc539;
+}
+.bg-white {
+  background: #FFFFFF;
+}
+/*******
+Overrided Styles
+*******/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 5px 0px;
+}
+md-grid-list md-grid-tile md-grid-tile-header,
+md-grid-list md-grid-tile md-grid-tile-footer {
+  height: auto;
+  max-height: 80px;
 }

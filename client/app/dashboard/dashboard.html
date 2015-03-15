@@ -1,1 +1,79 @@
-<h1>Sample Data</h1>
+<section class="dashboard-wrapper" data-ng-controller="DashBoardCtrl as vm">
+    <div class="row">
+        <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
+        md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12x" md-gutter-gt-sm="8px" >
+            <md-grid-tile class="bg-white danger md-whiteframe-z1"
+                md-rowspan="2" md-colspan="2">
+              <md-grid-tile-header class="bg-white">
+                <h3>All APs</h3>
+                <h4>10 Devices Down</h4>
+              </md-grid-tile-header>
+                <div easypiechart options="vm.deviceOneOptions" percent="vm.deviceOnePercentage">
+                    <div class="easypiechart-label">{{vm.deviceOnePercentage}} %</div>
+                </div>	
+            </md-grid-tile>
+            <md-grid-tile class="bg-white healthy md-whiteframe-z1"
+                md-rowspan="2" md-colspan="2">
+              <md-grid-tile-header class="bg-white">
+                <h3>All APs</h3>
+                <h4>1 Devices Down</h4>
+              </md-grid-tile-header>
+                <div easypiechart options="vm.deviceTwoOptions" percent="vm.deviceTwoPercentage">
+                    <div class="easypiechart-label">{{vm.deviceTwoPercentage}} %</div>
+                </div>	
+            </md-grid-tile>
+            <md-grid-tile class="bg-white warning md-whiteframe-z1"
+                md-rowspan="2" md-colspan="2">
+              <md-grid-tile-header class="bg-white">
+                <h3>All APs</h3>
+                <h4>2 Devices Down</h4>
+              </md-grid-tile-header>
+                <div easypiechart options="vm.deviceThreeOptions" percent="vm.deviceThreePercentage">
+                    <div class="easypiechart-label">{{vm.deviceThreePercentage}} %</div>
+                </div>	
+            </md-grid-tile>
+          </md-grid-list>
+    </div>
+    <div layout="row">
+        <section flex class='flex healthy md-whiteframe-z1'>
+            <div class="header">
+                <h3>5GZ</h3>
+                <h4>Good</h4>
+            </div>
+            <div class="body">
+                
+            </div>
+        </section>
+        <section flex class='flex warning md-whiteframe-z1'>
+            <div class="header">
+                <h3>5GZ</h3>
+                <h4>Fair</h4>
+            </div>
+            <div class="body">
+                
+            </div>
+        </section>
+        <section flex class='flex danger md-whiteframe-z1'>
+            <div class="header">
+                <h3>2.55GZ</h3>
+                <h4>Fair</h4>
+            </div>
+            <div class="body">
+                
+            </div>
+        </section>
+        <section flex class='flex healthy md-whiteframe-z1'>
+            <div class="header">
+                <h3>2.5GZ</h3>
+                <h4>Good</h4>
+            </div>
+            <div class="body">
+                
+            </div>
+        </section>
+    </div>
+    
+    
+    
+</section>
+<!-- DashBoard End --->

@@ -1,0 +1,10 @@
+<a class="brand-logo">
+   <img src="content/svg/cisco_logo.svg"/>
+</a>
+<md-list data-ng-controller="SideBarCtrl as vm">
+    <md-item data-ng-repeat="r in vm.navRoutes">
+       <md-button ui-sref="{{r.originalPath}}" data-ng-bind-html="r.content"
+                 class="md-button-colored" ng-class="{'selected' : it === ul.selected }">
+       </md-button>
+    </md-item>
+</md-list>

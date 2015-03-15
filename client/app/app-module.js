@@ -1,4 +1,4 @@
-angular.module('app', ['ngMaterial', 'app.core','app.layout', 'app.dashboard'])
+angular.module('app', ['ngMaterial', 'app-router', 'app.layout', 'app.core','app.dashboard'])
        .config(function($mdThemingProvider, $mdIconProvider){
                 $mdIconProvider
                       .defaultIconSet("content/svg/avatars.svg", 128)

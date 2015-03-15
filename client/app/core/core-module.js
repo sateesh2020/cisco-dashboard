@@ -5,10 +5,10 @@
         /*
          * Angular modules
          */
-        'ngAnimate', 'ngRoute',
+        'ngAnimate', 'ngSanitize',
         /*
          * Our reusable cross app code modules
          */
-        'blocks.router', 'blocks.logger'
+        'blocks.logger'
     ]);
 })();

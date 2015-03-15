@@ -22,6 +22,10 @@ md-list .md-button {
   font-weight: 500;
   text-align: left;
   width: 100%;
+  padding: 15px 5px 15px 30px;
+}
+md-list .md-button i.fa {
+  margin-right: 10px;
 }
 md-list .md-button .md-button.selected {
   color: #15bdf4;

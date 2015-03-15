@@ -1,22 +1,46 @@
-angular.module('app-router', ['ui.router'])
-       .config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
+angular
+
+.module('app-router', ['ui.router'])
+
+.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
     
-            $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/dashboard');
+    
+    $stateProvider
+        
+        // Dashboard ========================================
+        .state('dashboard', {
+            url: '/dashboard',
+            templateUrl: 'app/dashboard/dashboard.html'
+        })
+        
+            
+        // On-Demand --> New-Request  =================================
+        .state('devices', {
+            url: '/devices',
+          	templateUrl: 'app/devices/devices.html'  
+            
+        })
 
-            $stateProvider
+        // On-Demand --> Roll-Back  =================================
+        .state('services', {
+            url: '/services',
+            templateUrl: 'app/services/services.html'  
+            
+        })
 
-                // Dashboard ========================================
-                .state('dashboard', {
-                    url: '/dashboard',
-                    templateUrl: 'app/dashboard/dashboard.html'
-                })
+        // Scheduled Maintenance Request  =================================
+        .state('remote-users', {
+            url: '/remote-users',
+            templateUrl: 'app/remote-users/remote-users.html'  
+            
+        })
 
-
-                // Devices  =========================================
-                .state('devices', {
-                    url: '/devices',
-                    templateUrl: 'app/devices/devices.html'  
-
-                });
-
+        // Reports Request  =================================
+        .state('ordering', {
+            url: '/ordering',
+            templateUrl: 'app/ordering/ordering.html'  
+            
+        });
+        
 }]);

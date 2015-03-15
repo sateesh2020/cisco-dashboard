@@ -18,22 +18,53 @@
 
     <div flex layout="row">
         <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2"
-                    data-ng-include="'app/layout/sidebar.html'" md-component-id="left">
+                    md-component-id="left" data-ng-include="'app/layout/sideNav.html'">
+                <!--<ul style="list-style:none">
+                    <li class="classic-menu-dropdown">
+					<a data-toggle="dropdown" ui-sref="dashboard" 
+					data-hover="megamenu-dropdown" data-close-others="true">
+					Dashboard </i>
+					</a>
+				</li>
+				<li class="classic-menu-dropdown">
+					<a data-toggle="dropdown" ui-sref="devices" 
+					data-hover="megamenu-dropdown" data-close-others="true">
+					Devices</i>
+					</a>
+				</li>
+                <li class="classic-menu-dropdown">
+					<a data-toggle="dropdown" ui-sref="services" 
+					data-hover="megamenu-dropdown" data-close-others="true">
+					Services</i>
+					</a>
+				</li>
+				<li class="classic-menu-dropdown">
+					<a data-toggle="dropdown" ui-sref="ordering" 
+					data-hover="megamenu-dropdown" data-close-others="true">
+					Ordering</i>
+					</a>
+				</li>
+                </ul>-->
         </md-sidenav>
-        <md-content flex id="content" data-ng-view>
+        <md-content flex id="content" role="View" ui-view>
         </md-content>
 
     </div>
 
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
     
     <!-- Bootstrapping -->
     <script src="app/app-module.js"></script>
+    <script src="app/app-route.js"></script>
     
+    <!-- Layout -->
+    <script src="app/layout/layout-module.js"></script>
+    <script src="app/layout/side-nav.js"></script>
     
     <!-- Core Componenets -->
     <script src="app/core/core-module.js"></script>
@@ -41,21 +72,13 @@
     <!-- Resuable Componenets -->
     <script src="app/blocks/logger/logger.module.js"></script>
     <script src="app/blocks/logger/logger.js"></script>
-    <script src="app/blocks/router/router.module.js"></script>
-    <script src="app/blocks/router/routehelper.js"></script>
-    
-    <!-- Layout -->
-    <script src="app/layout/layout-module.js"></script>
-    <script src="app/layout/sidebar.js"></script>
     
     <!-- Dashboard -->
     <script src="app/dashboard/dashboard-module.js"></script>
-    <script src="app/dashboard/config-route.js"></script>
     <script src="app/dashboard/dashboard.js"></script>
     <script src="app/dashboard/DashboardService.js"></script>
     
     <!-- Devices -->
     <script src="app/devices/devices-module.js"></script>
-    <script src="app/devices/config-route.js"></script>
   </body>
 </html>

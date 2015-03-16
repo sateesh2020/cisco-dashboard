@@ -34,6 +34,9 @@ md-sidenav md-list {
   padding: 0px 0px 8px 0px;
 }
 /* Dashboard content area */
+.md-content.md-default-theme {
+  background-color: #f5f9fb;
+}
 .dashboard-wrapper {
   margin: 30px 60px;
   background: #f5f9fb;
@@ -46,7 +49,7 @@ md-sidenav md-list {
 }
 md-grid-tile.healthy md-grid-tile-header {
   background: #FFFFFF;
-  border-bottom: 1px solid #f5f9fb;
+  border-bottom: 2px solid #f5f9fb;
 }
 md-grid-tile.healthy md-grid-tile-header figcaption h3 {
   color: #232f34;
@@ -56,7 +59,7 @@ md-grid-tile.healthy md-grid-tile-header figcaption h4 {
 }
 md-grid-tile.warning md-grid-tile-header {
   background: #FFFFFF;
-  border-bottom: 1px solid #f5f9fb;
+  border-bottom: 2px solid #f5f9fb;
 }
 md-grid-tile.warning md-grid-tile-header figcaption h3 {
   color: #232f34;
@@ -130,6 +133,9 @@ md-grid-tile.danger md-grid-tile-header figcaption h4 {
 }
 .bg-white {
   background: #FFFFFF;
+}
+.bg-main {
+  background: #f5f9fb;
 }
 /*******
 Overrided Styles

@@ -1,5 +1,5 @@
 @brand-primary:#15BDF4;
-
+@main-bg      :#f5f9fb;
 
 @sky-blue     :#15BDF4;
 @green        :#7ACC5A;
@@ -52,7 +52,9 @@ md-list .md-button {
 
 
 /* Dashboard content area */
-
+.md-content.md-default-theme{
+     background-color: @main-bg;   
+}
 .dashboard-wrapper{
      margin: 30px 60px;
      background: @white;
@@ -68,7 +70,7 @@ md-list .md-button {
 md-grid-tile.healthy{
     md-grid-tile-header{
         background: #FFFFFF;
-        border-bottom: 1px solid @white;
+        border-bottom: 2px solid @white;
         figcaption{
             h3{
                 color: #232f34;
@@ -82,7 +84,7 @@ md-grid-tile.healthy{
 md-grid-tile.warning{
     md-grid-tile-header{
         background: #FFFFFF;
-        border-bottom: 1px solid @white;
+        border-bottom: 2px solid @white;
         figcaption{
             h3{
                 color: #232f34;
@@ -169,7 +171,9 @@ md-grid-tile.danger{
 .bg-white{
      background: #FFFFFF;   
 }
-
+.bg-main{
+     background: #f5f9fb;   
+}
 
 /*******
 Overrided Styles

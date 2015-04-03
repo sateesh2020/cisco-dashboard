@@ -7,8 +7,6 @@
   /**
    * Main Controller for the Cisco-Dashboard App
    * @param $scope
-   * @param $mdSidenav
-   * @param avatarsService
    * @constructor
    */
   function DashBoardCtrl($log, $q) {

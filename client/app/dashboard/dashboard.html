@@ -1,4 +1,5 @@
 <section class="dashboard-wrapper" data-ng-controller="DashBoardCtrl as vm">
+    <!-- Row One -->
     <div class="row">
         <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6"
         md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12x" md-gutter-gt-sm="8px" >
@@ -34,46 +35,187 @@
             </md-grid-tile>
           </md-grid-list>
     </div>
-    <div layout="row">
-        <section flex class='flex healthy md-whiteframe-z1'>
-            <div class="header">
-                <h3>5GZ</h3>
-                <h4>Good</h4>
-            </div>
-            <div class="body">
-                <md-progress-linear class="md-accent" md-mode="query" value="30"></md-progress-linear>
-            </div>
-        </section>
-        <section flex class='flex warning md-whiteframe-z1'>
-            <div class="header">
+    <!-- Row One End -->
+    <!-- Row Two Start -->
+    <div class="row">
+            <section class="col s3 portlet warning md-whiteframe-z1">
+                <div class="header">
                 <h3>5GZ</h3>
                 <h4>Fair</h4>
-            </div>
-            <div class="body">
-                
-            </div>
-        </section>
-        <section flex class='flex danger md-whiteframe-z1'>
-            <div class="header">
+                </div>
+                <div class="body">
+                   <ul class="collection custom-collection">
+                       <li class="collection-item">
+                           <a href="#!" class="collection-item">Utilization<span class="badge">Good</span></a>
+                            <md-progress-linear md-theme="healthy" md-mode="determinate" ng-value="50">
+                           </md-progress-linear>
+                       </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Noise<span class="badge">Good</span></a>
+                            <md-progress-linear md-theme="healthy" md-mode="determinate" ng-value="50">
+                            </md-progress-linear>
+                        </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Interface<span class="badge">Fair</span></a>
+                            <md-progress-linear md-theme="warning" md-mode="determinate" ng-value="50">
+                            </md-progress-linear>
+                        </li>
+                   </ul>
+                </div>
+            </section>
+            <section class="col s3 portlet warning md-whiteframe-z1">
+                <div class="header">
                 <h3>2.55GZ</h3>
                 <h4>Fair</h4>
-            </div>
-            <div class="body">
-                
-            </div>
-        </section>
-        <section flex class='flex healthy md-whiteframe-z1'>
-            <div class="header">
+                </div>
+                <div class="body">
+                    <ul class="collection custom-collection">
+                       <li class="collection-item">
+                           <a href="#!" class="collection-item">Utilization<span class="badge">Good</span></a>
+                            <md-progress-linear md-theme="healthy" md-mode="determinate" ng-value="50">
+                           </md-progress-linear>
+                       </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Noise<span class="badge">Good</span></a>
+                            <md-progress-linear md-theme="healthy" md-mode="determinate" ng-value="50">
+                            </md-progress-linear>
+                        </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Interface<span class="badge">Fair</span></a>
+                            <md-progress-linear md-theme="warning" md-mode="determinate" ng-value="50">
+                            </md-progress-linear>
+                        </li>
+                   </ul>
+                </div>
+            </section>
+            <section class="col s3 portlet danger md-whiteframe-z1">
+                <div class="header">
+                <h3>5GZ</h3>
+                <h4>Fair</h4>
+                </div>
+                <div class="body">
+                    <ul class="collection custom-collection">
+                       <li class="collection-item">
+                           <a href="#!" class="collection-item">Utilization<span class="badge">Good</span></a>
+                            <md-progress-linear md-theme="healthy" md-mode="determinate" ng-value="50">
+                           </md-progress-linear>
+                       </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Noise<span class="badge">Good</span></a>
+                            <md-progress-linear md-theme="healthy" md-mode="determinate" ng-value="50">
+                            </md-progress-linear>
+                        </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Interface<span class="badge">Fair</span></a>
+                            <md-progress-linear md-theme="warning" md-mode="determinate" ng-value="50">
+                            </md-progress-linear>
+                        </li>
+                   </ul>
+                </div>
+            </section>
+            <section class="col s3 portlet healthy md-whiteframe-z1">
+                <div class="header">
                 <h3>2.5GZ</h3>
                 <h4>Good</h4>
-            </div>
-            <div class="body">
-                
-            </div>
-        </section>
-    </div>
-    
-    
+                </div>
+                <div class="body">
+                    <ul class="collection custom-collection">
+                       <li class="collection-item">
+                           <a href="#!" class="collection-item">Utilization<span class="badge">Poor</span></a>
+                            <md-progress-linear md-theme="danger" md-mode="determinate" ng-value="20">
+                           </md-progress-linear>
+                       </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Noise<span class="badge">Poor</span></a>
+                            <md-progress-linear md-theme="danger" md-mode="determinate" ng-value="15">
+                            </md-progress-linear>
+                        </li>
+                        <li class="collection-item">
+                            <a href="#!" class="collection-item">Interface<span class="badge">Fair</span></a>
+                            <md-progress-linear md-theme="warning" md-mode="determinate" ng-value="50">
+                            </md-progress-linear>
+                        </li>
+                   </ul>
+                </div>  
+            </section>
+        </div>
+        <!-- Row Two End -->
+        <!-- Row Three Start -->
+        <div class="row">
+            <section class="col s6 md-whiteframe-z1">
+                <div class="header">
+                    <h3>Top Busiest WLANs</h3>
+                </div>
+                <div class="body">
+                    <table class="hoverable responsive-table">
+                        <thead>
+                          <tr>
+                              <th data-field="ssid">SSID</th>
+                              <th data-field="noOfClients" class="right-align"># of Clients</th>
+                              <th data-field="price" class="right-align">Usage</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>Katy Perry</td>
+                            <td class="right-align">7895</td>
+                            <td class="right-align">15GB</td>
+                          </tr>
+                          <tr>
+                            <td>Selena</td>
+                            <td class="right-align">5265</td>
+                            <td class="right-align">10GB</td>
+                          </tr>
+                          <tr>
+                            <td>Taylor Swift</td>
+                            <td class="right-align">2562</td>
+                            <td class="right-align">6GB</td>
+                          </tr>
+                          <tr>
+                            <td>Bruno Mars</td>
+                            <td class="right-align">3522</td>
+                            <td class="right-align">6.6GB</td>
+                          </tr>
+                            <tr>
+                            <td>Meghan Trainor</td>
+                            <td class="right-align">4562</td>
+                            <td class="right-align">5.4GB</td>
+                          </tr>
+                            <tr>
+                            <td>PitBull</td>
+                            <td class="right-align">3251</td>
+                            <td class="right-align">4.8GB</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </section>
+            <!-- Buisiest LAN End -->
+            <section class="col s6 md-whiteframe-z1">
+                <div class="header">
+                    <h3>Health Summary</h3>
+                </div>
+                <div class="body">
+                    <ul class="row">
+                        <li class="col s4">
+                            <div class="btn-floating btn-large red">
+                            14C</div>Controller Temperature
+                        </li>
+                        <li class="col s4">
+                            <div class="btn-floating btn-large orange">
+                            68%</div>Memory Utilization
+                        </li>
+                        <li class="col s4">
+                            <div class="btn-floating btn-large green">
+                            20%</div>CPU Utilization
+                        </li>
+                    </ul>            
+                </div>
+            </section>
+            <!-- Health Summary End -->
+        </div>
+        <!-- Row Three End -->
     
 </section>
 <!-- DashBoard End --->

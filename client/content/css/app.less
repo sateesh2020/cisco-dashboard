@@ -11,7 +11,8 @@
 @lighter-gray :#414144;
 @pink         :#F28B9E;
 @white        :#F5F9FB;
-
+@pale-gray    :#DFDFDF;
+@text-dull    :#b7b7b7;
 html, body {
   font-family: 'Roboto', sans-serif;
   font-size:14px;
@@ -34,7 +35,7 @@ md-sidenav.md-locked-open{
 /* Sidenav area */
 
 md-list .md-button {
-  color: inherit;
+  color: @text-dull;
   font-weight: 500;
   text-align: left;
   width: 100%;
@@ -42,13 +43,13 @@ md-list .md-button {
   i.fa{
     margin-right: 10px;   
   }
-  .md-button.selected {
-    color: @brand-primary;
-  }
 }
-  md-sidenav  md-list {
+md-list .md-button.selected{
+    color: @brand-primary;
+}
+md-sidenav  md-list {
     padding: 0px 0px 8px 0px;
-  }
+}
 
 
 /* Dashboard content area */
@@ -70,7 +71,7 @@ md-list .md-button {
 md-grid-tile.healthy{
     md-grid-tile-header{
         background: #FFFFFF;
-        border-bottom: 2px solid @white;
+        border-bottom: 2px solid @pale-gray;
         figcaption{
             h3{
                 color: #232f34;
@@ -84,7 +85,7 @@ md-grid-tile.healthy{
 md-grid-tile.warning{
     md-grid-tile-header{
         background: #FFFFFF;
-        border-bottom: 2px solid @white;
+        border-bottom: 2px solid @pale-gray;
         figcaption{
             h3{
                 color: #232f34;
@@ -98,7 +99,7 @@ md-grid-tile.warning{
 md-grid-tile.danger{
     md-grid-tile-header{
         background: #FFFFFF;
-        border-bottom: 2px solid @white;
+        border-bottom: 2px solid @pale-gray;
         figcaption{
             h3{
                 color: #232f34;
@@ -109,9 +110,9 @@ md-grid-tile.danger{
         }
     }
 }
-[flex].flex.healthy{
+.portlet.healthy{
     .header{
-        border-bottom: 2px solid @white;
+        border-bottom: 2px solid @pale-gray;
         h3{
             color: #233f34;
         }
@@ -120,9 +121,9 @@ md-grid-tile.danger{
         }
      }  
 }
-[flex].flex.warning{
+.portlet.warning{
     .header{
-        border-bottom: 2px solid @white;
+        border-bottom: 2px solid @pale-gray;
         h3{
             color: #233f34;
         }
@@ -131,9 +132,9 @@ md-grid-tile.danger{
         }
      }  
 }
-[flex].flex.danger{
+.portlet.danger{
     .header{
-        border-bottom: 2px solid @white;
+        border-bottom: 2px solid @pale-gray;
         h3{
             color: #233f34;
         }
@@ -142,13 +143,31 @@ md-grid-tile.danger{
         }
      }  
 }
-[flex].flex{
+.portlet{
     background: #FFFFFF;
-    margin: 10px 5px 10px 0px;
+    margin: 10px 0px 10px 0px;
     h3,h4{
         font-weight: 400;
         margin: 0 0 0 16px;   
     }
+}
+.custom-collection{
+    margin: 0px;
+    border: thin none;
+    .collection-item{
+        padding: 10px 5px;
+    }
+}
+md-progress-linear{
+    margin: 5px 0px;
+}
+
+ul.collection-inline li{
+    list-style: none;
+    display: inline-block;
+}
+li p.text-adjust{
+    word-wrap: break-word;
 }
 /******
 * Colorography

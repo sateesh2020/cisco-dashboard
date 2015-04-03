@@ -4,11 +4,14 @@
     angular.module('app.layout')
             .controller('SideBarCtrl', SideBarCtrl);
     
-    SideBarCtrl.$inject = ['$scope'];
-    function SideBarCtrl($scope) {
+    SideBarCtrl.$inject = ['$scope','$location'];
+    function SideBarCtrl($scope,location) {
         /*jshint validthis: true */
         var vm = this;
-        
+        vm.isSelected = function(view){
+            console.log(view);
+            return location.path().indexOf(view) !=-1;
+        }
         vm.navRoutes = [
             {
                 'originalPath':'dashboard',

@@ -4,7 +4,7 @@
 <md-list data-ng-controller="SideBarCtrl as vm">
     <md-item data-ng-repeat="r in vm.navRoutes">
        <md-button ui-sref="{{r.originalPath}}" data-ng-bind-html="r.content" aria-label=''
-                 class="md-button-colored" ng-class="{'selected' : it === ul.selected }">
+                 class="md-button-colored" ng-class="{'selected' : vm.isSelected(r.originalPath) }">
        </md-button>
     </md-item>
 </md-list>

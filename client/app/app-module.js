@@ -10,8 +10,11 @@ angular.module('app', ['ngMaterial', 'app-router', 'app.layout', 'app.core','app
                       .icon("phone"      , "content/svg/phone.svg"       , 512)
                       .icon("customerLogo","content/svg/cisco_logo.svg",200);
 
-                $mdThemingProvider.theme('default')
-                          .primaryPalette('brown')
-                          .accentPalette('red');
+                $mdThemingProvider.theme('healthy')
+                          .primaryPalette('green');
+                $mdThemingProvider.theme('warning')
+                          .primaryPalette('orange');
+                $mdThemingProvider.theme('danger')
+                          .primaryPalette('deep-orange');
 
 });
